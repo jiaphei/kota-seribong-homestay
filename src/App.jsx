@@ -370,7 +370,7 @@ function App() {
             <div className="space-y-3 text-gray-300">
               <p>📍 Bandar Baru Tunjong</p>
               <p>🏙 Kota Bharu, Kelantan</p>
-              <p>💰 From RM300/night</p>
+              <p>💰 From RM350/night</p>
               <p>
                 <a
                   href="https://wa.me/60169306966"
