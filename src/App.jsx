@@ -220,7 +220,7 @@ function App() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
           <div>
             <p className="mb-3 font-semibold text-[#9b6b3d]">Simple Pricing</p>
-            <h2 className="mb-6 text-4xl font-bold">From RM300 per night.</h2>
+            <h2 className="mb-6 text-4xl font-bold">From RM350 per night.</h2>
             <p className="text-lg leading-8 text-gray-600">
               Suitable for families and groups up to 8 guests. Contact us on WhatsApp to check available dates and confirm your booking.
             </p>
