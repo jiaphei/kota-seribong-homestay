@@ -90,7 +90,7 @@ function App() {
               </span>
 
               <span className="rounded-full bg-[#b99162] px-3 py-2 font-bold text-white shadow-lg md:px-4">
-                RM300/night
+                RM350/night
               </span>
             </div>
 
@@ -228,7 +228,7 @@ function App() {
 
           <div className="rounded-3xl bg-[#2f241b] p-10 text-center text-white shadow-xl">
             <p className="mb-3 text-[#d8b98c]">Starting From</p>
-            <h3 className="mb-4 text-6xl font-bold">RM300</h3>
+            <h3 className="mb-4 text-6xl font-bold">RM350</h3>
             <p className="mb-8 text-xl">Per Night</p>
 
             <a
