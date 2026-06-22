@@ -324,7 +324,7 @@ function App() {
             <p>📍 Bandar Baru Tunjong, Kota Bharu, Kelantan</p>
             <p>👨‍👩‍👧‍👦 4 Bedrooms • Up to 8 Guests</p>
             <p>🕒 Check In: 3 PM | Check Out: 12 PM</p>
-            <p>💰 From RM300/night</p>
+            <p>💰 From RM350/night</p>
           </div>
 
           <a
