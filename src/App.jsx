@@ -128,7 +128,7 @@ function App() {
                 href="#gallery"
                 className="rounded-full border border-white/70 bg-black/20 px-5 py-3 text-sm font-bold text-white backdrop-blur hover:bg-white hover:text-[#2f241b] duration-300 md:px-7"
               >
-                🖼 Photos
+                👨‍👩‍👧‍👦 Photos
               </a>
             </div>
 
