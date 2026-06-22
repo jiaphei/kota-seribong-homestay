@@ -96,7 +96,7 @@ function App() {
 
             <div className="mt-4 grid max-w-3xl grid-cols-2 gap-2 md:mt-5 md:grid-cols-4 md:gap-3">
               {[
-                ["RM300", "Per Night"],
+                ["RM350", "Per Night"],
                 ["4", "Bedrooms"],
                 ["8", "Guests"],
                 ["3PM", "Check In"],
