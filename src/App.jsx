@@ -287,25 +287,25 @@ function App() {
           <div className="rounded-3xl bg-white p-8 text-center shadow-md">
             <div className="mb-4 text-4xl">🛒</div>
             <h3 className="font-bold">Mydin Tunjong</h3>
-            <p className="text-gray-600">5 mins drive</p>
+            <p className="text-gray-600">2km</p>
           </div>
 
           <div className="rounded-3xl bg-white p-8 text-center shadow-md">
             <div className="mb-4 text-4xl">🏬</div>
             <h3 className="font-bold">AEON Mall Kota Bharu</h3>
-            <p className="text-gray-600">10 mins drive</p>
+            <p className="text-gray-600">10km</p>
           </div>
 
           <div className="rounded-3xl bg-white p-8 text-center shadow-md">
             <div className="mb-4 text-4xl">🌙</div>
             <h3 className="font-bold">Wakaf Che Yeh</h3>
-            <p className="text-gray-600">15 mins drive</p>
+            <p className="text-gray-600">8km</p>
           </div>
 
           <div className="rounded-3xl bg-white p-8 text-center shadow-md">
             <div className="mb-4 text-4xl">✈️</div>
             <h3 className="font-bold">Sultan Ismail Petra Airport</h3>
-            <p className="text-gray-600">20 mins drive</p>
+            <p className="text-gray-600">14km</p>
           </div>
 
         </div>
