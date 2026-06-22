@@ -52,92 +52,91 @@ function App() {
       </nav>
 
       {/* Hero */}
-      <section className="relative h-screen overflow-hidden">
+      <section className="relative min-h-screen overflow-hidden md:h-screen">
         <img
           src={heroImages[currentImage]}
           alt="Kota Seribong Homestay"
           className="absolute inset-0 h-full w-full object-cover transition-all duration-1000"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/60 to-black/40 md:bg-gradient-to-r md:from-black md:via-black/70 md:to-black/20"></div>
 
-        <div className="relative z-10 flex h-screen items-center px-8 pt-20 pb-24 text-white md:px-14">
-          <div className="max-w-4xl">
-            <p className="mb-3 text-xs font-bold uppercase tracking-[4px] text-[#d8b98c]">
+        <div className="relative z-10 flex min-h-screen items-center px-5 pt-36 pb-28 text-white md:h-screen md:px-14 md:pt-20 md:pb-0">
+          <div className="w-full max-w-4xl">
+            <p className="mb-2 text-[10px] font-bold uppercase tracking-[3px] text-[#d8b98c] md:mb-3 md:text-xs md:tracking-[4px]">
               Premium Family Stay in Kota Bharu
             </p>
 
-            <h2 className="max-w-3xl text-5xl font-black leading-tight md:text-7xl">
+            <h2 className="max-w-3xl text-4xl font-black leading-tight md:text-7xl">
               Kota Seribong Homestay
             </h2>
 
-            <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-100">
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-gray-100 md:mt-4 md:text-lg md:leading-7">
               Comfortable, clean and spacious homestay near Bandar Baru Tunjong,
               perfect for families, groups, wedding stays and short vacations.
             </p>
 
-            <div className="mt-5 flex flex-wrap gap-3 text-sm font-medium">
-              <span className="rounded-full border border-[#d8b98c]/40 bg-black/40 px-4 py-2 backdrop-blur">
+            <div className="mt-4 flex flex-wrap gap-2 text-xs font-medium md:mt-5 md:gap-3 md:text-sm">
+              <span className="rounded-full border border-[#d8b98c]/40 bg-black/50 px-3 py-2 backdrop-blur md:px-4">
                 🛏 4 Bedrooms
               </span>
 
-              <span className="rounded-full border border-[#d8b98c]/40 bg-black/40 px-4 py-2 backdrop-blur">
-                👨‍👩‍👧‍👦 Up to 8 Guests
+              <span className="rounded-full border border-[#d8b98c]/40 bg-black/50 px-3 py-2 backdrop-blur md:px-4">
+                👨‍👩‍👧‍👦 8 Guests
               </span>
 
-              <span className="rounded-full border border-[#d8b98c]/40 bg-black/40 px-4 py-2 backdrop-blur">
-                📍 Bandar Baru Tunjong
+              <span className="rounded-full border border-[#d8b98c]/40 bg-black/50 px-3 py-2 backdrop-blur md:px-4">
+                📍 Tunjong
               </span>
 
-              <span className="rounded-full bg-[#b99162] px-4 py-2 font-bold text-white shadow-lg">
-                From RM300/night
+              <span className="rounded-full bg-[#b99162] px-3 py-2 font-bold text-white shadow-lg md:px-4">
+                RM300/night
               </span>
             </div>
 
-            <div className="mt-5 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4">
-              <div className="rounded-2xl border border-[#d8b98c]/50 bg-black/60 p-4 text-center shadow-xl backdrop-blur-xl">
-                <h3 className="text-3xl font-black text-[#f7d6a3]">RM300</h3>
-                <p className="mt-1 text-sm text-gray-200">Per Night</p>
-              </div>
-
-              <div className="rounded-2xl border border-[#d8b98c]/50 bg-black/60 p-4 text-center shadow-xl backdrop-blur-xl">
-                <h3 className="text-3xl font-black text-[#f7d6a3]">4</h3>
-                <p className="mt-1 text-sm text-gray-200">Bedrooms</p>
-              </div>
-
-              <div className="rounded-2xl border border-[#d8b98c]/50 bg-black/60 p-4 text-center shadow-xl backdrop-blur-xl">
-                <h3 className="text-3xl font-black text-[#f7d6a3]">8</h3>
-                <p className="mt-1 text-sm text-gray-200">Guests</p>
-              </div>
-
-              <div className="rounded-2xl border border-[#d8b98c]/50 bg-black/60 p-4 text-center shadow-xl backdrop-blur-xl">
-                <h3 className="text-3xl font-black text-[#f7d6a3]">3PM</h3>
-                <p className="mt-1 text-sm text-gray-200">Check In</p>
-              </div>
+            <div className="mt-4 grid max-w-3xl grid-cols-2 gap-2 md:mt-5 md:grid-cols-4 md:gap-3">
+              {[
+                ["RM300", "Per Night"],
+                ["4", "Bedrooms"],
+                ["8", "Guests"],
+                ["3PM", "Check In"],
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="rounded-2xl border border-[#d8b98c]/50 bg-black/65 p-3 text-center shadow-xl backdrop-blur-xl md:p-4"
+                >
+                  <h3 className="text-2xl font-black text-[#f7d6a3] md:text-3xl">
+                    {item[0]}
+                  </h3>
+                  <p className="mt-1 text-xs text-gray-200 md:text-sm">
+                    {item[1]}
+                  </p>
+                </div>
+              ))}
             </div>
 
-            <div className="mt-5 flex flex-wrap gap-3">
+            <div className="mt-4 flex flex-wrap gap-3 md:mt-6">
               <a
                 href="https://wa.me/60169306966"
                 target="_blank"
-                className="rounded-full bg-[#b99162] px-6 py-3 text-sm font-bold text-white shadow-xl hover:bg-[#8c6d49] duration-300"
+                className="rounded-full bg-[#b99162] px-5 py-3 text-sm font-bold text-white shadow-xl hover:bg-[#8c6d49] duration-300 md:px-7"
               >
-                📞 Book Now on WhatsApp
+                📞 Book Now
               </a>
 
               <a
                 href="#gallery"
-                className="rounded-full border border-white/70 bg-black/20 px-6 py-3 text-sm font-bold text-white backdrop-blur hover:bg-white hover:text-[#2f241b] duration-300"
+                className="rounded-full border border-white/70 bg-black/20 px-5 py-3 text-sm font-bold text-white backdrop-blur hover:bg-white hover:text-[#2f241b] duration-300 md:px-7"
               >
-                🖼 View Photos
+                🖼 Photos
               </a>
             </div>
 
-            <div className="mt-5 flex gap-3">
+            <div className="mt-4 flex gap-3 md:mt-5">
               {heroImages.map((_, index) => (
                 <div
                   key={index}
-                  className={`h-3 w-3 rounded-full transition-all ${currentImage === index ? "bg-[#d8b98c]" : "bg-white/50"
+                  className={`h-2.5 w-2.5 rounded-full transition-all md:h-3 md:w-3 ${currentImage === index ? "bg-[#d8b98c]" : "bg-white/50"
                     }`}
                 ></div>
               ))}
