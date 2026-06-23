@@ -89,11 +89,14 @@ function App() {
                 📍 Tunjong
               </span>
 
+              <span className="rounded-full bg-[#b99162] px-3 py-2 font-bold text-white shadow-lg md:px-4">
+                RM350/night
+              </span>
             </div>
 
             <div className="mt-4 grid max-w-3xl grid-cols-2 gap-2 md:mt-5 md:grid-cols-4 md:gap-3">
               {[
-
+                ["RM350", "Per Night"],
                 ["4", "Bedrooms"],
                 ["8", "Guests"],
                 ["3PM", "Check In"],
@@ -217,12 +220,17 @@ function App() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
           <div>
             <p className="mb-3 font-semibold text-[#9b6b3d]">Simple Pricing</p>
+            <h2 className="mb-6 text-4xl font-bold">From RM350 per night.</h2>
             <p className="text-lg leading-8 text-gray-600">
               Suitable for families and groups up to 8 guests. Contact us on WhatsApp to check available dates and confirm your booking.
             </p>
           </div>
 
           <div className="rounded-3xl bg-[#2f241b] p-10 text-center text-white shadow-xl">
+            <p className="mb-3 text-[#d8b98c]">Starting From</p>
+            <h3 className="mb-4 text-6xl font-bold">RM350</h3>
+            <p className="mb-8 text-xl">Per Night</p>
+
             <a
               href="https://wa.me/60169306966"
               target="_blank"
@@ -316,6 +324,7 @@ function App() {
             <p>📍 Bandar Baru Tunjong, Kota Bharu, Kelantan</p>
             <p>👨‍👩‍👧‍👦 4 Bedrooms • Up to 8 Guests</p>
             <p>🕒 Check In: 3 PM | Check Out: 12 PM</p>
+            <p>💰 From RM350/night</p>
           </div>
 
           <a
@@ -361,6 +370,7 @@ function App() {
             <div className="space-y-3 text-gray-300">
               <p>📍 Bandar Baru Tunjong</p>
               <p>🏙 Kota Bharu, Kelantan</p>
+              <p>💰 From RM350/night</p>
               <p>
                 <a
                   href="https://wa.me/60169306966"
